@@ -23,8 +23,9 @@ Player.prototype.zero = function () {
 }
 
 Player.prototype.win = function() {
-  if (this.grand >= 20) {
+  if (this.grand >= 5) {
     $("#win").show();
+    $("#winDisplay").text(this.playerName + " you win!");
   }
 }
 
@@ -35,7 +36,7 @@ $(document).ready(function(){
   var newPlayer1 = new Player("Player 1");
   var newPlayer2 = new Player("Player 2");
   $("#roll2, #hold2, #p2turn").hide();
-  
+
 //Code for Player 1
   $("#roll1").click(function(event) {
     event.preventDefault();
