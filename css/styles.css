@@ -1,22 +1,43 @@
+body {
+  font-family: 'Changa One', cursive;
+}
+
 #win {
   display: none;
 }
 
-#roll2, #hold2 {
-  display: none;
+#hold2 {
+  background-color: #f2b99f;
+  display: block;
+  margin: auto;
+}
+#roll2 {
+  background-color: #f2b99f;
+  display: block;
+  margin: auto;
 }
 
 #p2turn {
   display: none;
 }
 
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
 h1 {
   text-align: center;
-  margin-bottom: 90px;
+  /*margin-bottom: 90px;*/
 }
 
 .btn {
   background-color: #f2b99f;
+  display: block;
+  margin: auto;
 }
 
 .btn:hover {
@@ -28,19 +49,27 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 10% 30%;
-
 }
+
 #pigHeader {
+  font-family: 'Changa One', cursive;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
   opacity: 0.8;
+  height: 150px;
+  width: 80%;
+  margin: auto;
+  padding-top: 8em;
+  padding-bottom: 15em;
 }
 
 #background {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
 }
 
 .stretch {
@@ -48,6 +77,18 @@ h1 {
   height: 100%;
 }
 
-.row {
+.panel {
   opacity: 0.9;
+  justify-content: center;
+  margin: auto;
+}
+
+.panel-heading-custom {
+  background-color: #e5f9d1;
+}
+
+.opaque {
+  position: relative;
+  top: -3.5em;
+  color: black;
 }

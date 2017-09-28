@@ -34,7 +34,8 @@ $(document).ready(function(){
 
   var newPlayer1 = new Player("Player 1");
   var newPlayer2 = new Player("Player 2");
-
+  $("#roll2, #hold2, #p2turn").hide();
+  
 //Code for Player 1
   $("#roll1").click(function(event) {
     event.preventDefault();
