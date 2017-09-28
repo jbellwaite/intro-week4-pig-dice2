@@ -15,6 +15,39 @@ h1 {
   margin-bottom: 90px;
 }
 
-body {
-  background-color: #34afaf;
+.btn {
+  background-color: #f2b99f;
+}
+
+.btn:hover {
+  background-color: #e5f9d1;
+}
+
+.jumbotron {
+  background-image: url(../img/pigfarm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 30%;
+
+}
+#pigHeader {
+  opacity: 0.8;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.stretch {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  opacity: 0.9;
 }
