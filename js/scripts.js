@@ -26,6 +26,10 @@ Player.prototype.win = function() {
   if (this.grand >= 5) {
     $("#win").show();
     $("#winDisplay").text(this.playerName + " you win!");
+    $("#winBanner").show();
+    $("#winBanner2").show();
+    $("#winBanner3").show();
+    $("#winBanner4").show();
   }
 }
 
