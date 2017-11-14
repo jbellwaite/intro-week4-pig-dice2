@@ -1,10 +1,11 @@
 
 
-function Player (player) {
+function Player (player, total) {
   this.playerName = player;
   this.subTotal = [];
   this.grand = 0;
-}
+  this.total = total;
+};
 
 Player.prototype.getRandomNumber=function(min, max) {
   min = Math.ceil(1);
@@ -23,16 +24,18 @@ Player.prototype.grandTotal = function() {
 
 Player.prototype.zero = function () {
     this.subTotal=[];
+    return this.subTotal;
 };
 
 Player.prototype.win = function() {
   if (this.grand >= 5) {
-    $("#win").show();
-    $("#winDisplay").text(this.playerName + " you win!");
-    $("#winBanner").show();
-    $("#winBanner2").show();
-    $("#winBanner3").show();
-    $("#winBanner4").show();
+    // $("#win").show();
+    // $("#winDisplay").text(this.playerName + " you win!");
+    // $("#winBanner").show();
+    // $("#winBanner2").show();
+    // $("#winBanner3").show();
+    // $("#winBanner4").show();
+    return "you win";
   }
 };
 
